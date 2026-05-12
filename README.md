@@ -71,5 +71,14 @@ O repositorio foi preparado para versionar apenas os arquivos realmente necessar
 
 ## Autor
 
+Desenvolvido por **Silvanei Martins**
+
+- [LinkedIn](https://www.linkedin.com/in/silvanei-martins-a5412436)
+- [Site Pessoal](https://silvaneimartins.com.br/)
+- [GitHub](https://github.com/Store-Sam-Martins)
+- Email: silvaneimartins_rcc@hotmail.com
+- [YouTube](https://www.youtube.com/@silvaneimartins2487/featured)
+- [X / Twitter](https://x.com/SilvaneiMartins)
+
 Projeto desenvolvido para fins de estudo no curso de **Unreal Engine + C++**.
 
