@@ -1,0 +1,57 @@
+# Unreal Engine
+
+# Build products and generated data
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains / Rider
+.idea/
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# Unreal generated project files
+*.xcodeproj
+*.xcworkspace
+*.opensdf
+*.sdf
+*.db
+
+# Local engine and editor files
+*.tmp
+*.log
+*.cache
+*.pdb
+
+# Crash and profiling artifacts
+*.dmp
+*.utrace
+*.memreport
+
+# Optional: ignore local automation or backup files
+*.bak
+*.swp
+*.orig
+
+# Keep source, config, content and project definition
+!Source/
+!Config/
+!Content/
+!Plugins/
+!*.uproject
+!*.uplugin
+!*.sln
+!.vsconfig
