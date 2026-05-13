@@ -16,16 +16,20 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	int NumberOfApples = 10;
-	int NumberOfOranges = 7;
-	UE_LOG(LogTemp, Display, TEXT("Numbers of apples: %d"), NumberOfApples);
-	UE_LOG(LogTemp, Display, TEXT("Nymbers of oranges: %d"), NumberOfOranges);
+	int MyValue;
+	MyValue = 10 / 5;
+	UE_LOG(LogTemp, Display, TEXT("MyValue is %d"), MyValue);
 
-	float MyHeight = 182.5f;
-	UE_LOG(LogTemp, Display, TEXT("My heigth is %f"), MyHeight);
+	int MyMultiplier;
+	MyMultiplier = 10 * MyValue;
+	UE_LOG(LogTemp, Display, TEXT("MyMultiplier is %d"), MyMultiplier);
 
-	FString MyName = "Silvanei Martins";
-	UE_LOG(LogTemp, Display, TEXT("My name is %s"), *MyName);
+	int MyDivider;
+	MyDivider = MyMultiplier / 10;
+	UE_LOG(LogTemp, Display, TEXT("MyDivider is %d"), MyDivider);
+
+	float MyCalculation = 12.0f / 5.0f;
+	UE_LOG(LogTemp, Display, TEXT("MyCalculation is %f"), MyCalculation);
 }
 
 // Called every frame
