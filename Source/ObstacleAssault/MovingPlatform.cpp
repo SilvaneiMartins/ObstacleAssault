@@ -15,20 +15,8 @@ AMovingPlatform::AMovingPlatform()
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	int MyValue;
-	MyValue = 10 / 5;
-	UE_LOG(LogTemp, Display, TEXT("MyValue is %d"), MyValue);
 
-	int MyMultiplier;
-	MyMultiplier = 10 * MyValue;
-	UE_LOG(LogTemp, Display, TEXT("MyMultiplier is %d"), MyMultiplier);
-
-	int MyDivider;
-	MyDivider = MyMultiplier / 10;
-	UE_LOG(LogTemp, Display, TEXT("MyDivider is %d"), MyDivider);
-
-	float MyCalculation = 12.0f / 5.0f;
+	float MyCalculation = 8.0f + 2.5f - 1.0f * 10.0f;
 	UE_LOG(LogTemp, Display, TEXT("MyCalculation is %f"), MyCalculation);
 }
 
