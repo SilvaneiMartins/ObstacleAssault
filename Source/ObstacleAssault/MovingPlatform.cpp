@@ -16,9 +16,16 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay 1"));
-	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay 2"));
-	UE_LOG(LogTemp, Display, TEXT("MovingPlatform BeginPlay 3"));
+	int NumberOfApples = 10;
+	int NumberOfOranges = 7;
+	UE_LOG(LogTemp, Display, TEXT("Numbers of apples: %d"), NumberOfApples);
+	UE_LOG(LogTemp, Display, TEXT("Nymbers of oranges: %d"), NumberOfOranges);
+
+	float MyHeight = 182.5f;
+	UE_LOG(LogTemp, Display, TEXT("My heigth is %f"), MyHeight);
+
+	FString MyName = "Silvanei Martins";
+	UE_LOG(LogTemp, Display, TEXT("My name is %s"), *MyName);
 }
 
 // Called every frame
