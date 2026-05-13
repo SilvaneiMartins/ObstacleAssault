@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Preencha o aviso de direitos autorais na página Descrição das Configurações do Projeto.
 
 #pragma once
 
@@ -12,15 +12,20 @@ class OBSTACLEASSAULT_API AMovingPlatform : public AActor
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
+	// Define os valores padrão para as propriedades deste ator.
 	AMovingPlatform();
 
 protected:
-	// Called when the game starts or when spawned
+	// Chamado quando o jogo inicia ou quando o personagem é gerado.
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
+	// Chamado de cada quadro
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere)
+	float MemberFloat = 10.0f;
+
+	UPROPERTY(VisibleAnywhere)
+	int MemberInt = 5;
 };

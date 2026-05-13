@@ -1,26 +1,26 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Preencha o aviso de direitos autorais na página Descrição das Configurações do Projeto.
 
 
 #include "MovingPlatform.h"
 
-// Sets default values
+// Define valores padrão
 AMovingPlatform::AMovingPlatform()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+ 	// Configure este ator para chamar Tick() a cada frame. Você pode desativar essa configuração para melhorar o desempenho, caso não precise dela.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
 
-// Called when the game starts or when spawned
+// Chamado quando o jogo inicia ou quando o personagem é gerado.
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	float MyCalculation = 8.0f + 2.5f - 1.0f * 10.0f;
-	UE_LOG(LogTemp, Display, TEXT("MyCalculation is %f"), MyCalculation);
+	UE_LOG(LogTemp, Display, TEXT("MemberFloat: %f"), MemberFloat);
+	UE_LOG(LogTemp, Display, TEXT("MemberInt: %d"), MemberInt);
 }
 
-// Called every frame
+// Chamado de cada quadro
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
