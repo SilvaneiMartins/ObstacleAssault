@@ -16,8 +16,7 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Display, TEXT("MemberFloat: %f"), MemberFloat);
-	UE_LOG(LogTemp, Display, TEXT("MemberInt: %d"), MemberInt);
+	SetActorLocation(MyVector);
 }
 
 // Chamado de cada quadro
