@@ -42,6 +42,10 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 
 	if (DistanceMoved >= MoveDistance)
 	{
+		float OverShoot = DistanceMoved - MoveDistance;
+		FString PlatformName = GetName();
+		UE_LOG(LogTemp, Display, TEXT("%s overshoot by %f"), *PlatformName, OverShoot);
+
 		PlatformVelocity = -PlatformVelocity;
 		StartLocation = CurrentLoaction;
 	}
