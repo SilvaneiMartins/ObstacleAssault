@@ -23,12 +23,4 @@ public:
 	// Chamado de cada quadro
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere)
-	float MemberFloat = 10.0f;
-
-	UPROPERTY(VisibleAnywhere)
-	int MemberInt = 5;
-
-	UPROPERTY(EditAnywhere)
-	FVector MyVector = FVector(2250.0f, -1190.0f, 400.0f);
 };
