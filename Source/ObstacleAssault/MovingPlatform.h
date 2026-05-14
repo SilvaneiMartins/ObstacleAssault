@@ -23,4 +23,6 @@ public:
 	// Chamado de cada quadro
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere)
+	FVector PlatformVelocity = FVector(0.0f, 0.0f, 0.0f);
 };
