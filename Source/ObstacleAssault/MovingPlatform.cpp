@@ -16,7 +16,6 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SetActorLocation(MyVector);
 }
 
 // Chamado de cada quadro
@@ -24,4 +23,6 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	MyVector.Z = MyVector.Z + 1;
+	SetActorLocation(MyVector);
 }
