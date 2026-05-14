@@ -18,6 +18,8 @@ void AMovingPlatform::BeginPlay()
 	Super::BeginPlay();
 
 	MyTestFunction(11.02f, 20);
+
+	StartLocation = GetActorLocation();
 }
 
 void AMovingPlatform::Tick(float DeltaTime)
@@ -35,6 +37,8 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 	CurrentLoaction = CurrentLoaction + (PlatformVelocity * DeltaTime);
 
 	SetActorLocation(CurrentLoaction);
+
+	DistanceMoved = FVector::Dist(StartLocation, CurrentLoaction);
 }
 
 void AMovingPlatform::RotatePlatform(float DeltaTime)
